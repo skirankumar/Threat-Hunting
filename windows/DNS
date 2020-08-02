@@ -12,3 +12,4 @@ event.category:process and event.type:start and process.parent.name:dns.exe and 
 As detailed in the Check Point SIGRed research, abnormally large DNS responses can cause the heap-based buffer overflow scenario. The logic in Figure 3 (below) identifies large DNS responses using either Packetbeat or Filebeat (with Zeek or Suricata modules enabled).
 
 event.category:(network or network_traffic) and destination.port:53 and (event.dataset:zeek.dns or type:dns or event.type:connection) and network.bytes>60000 
+ 
