@@ -1,0 +1,3 @@
+NetBIOS over TCP/IP or NBT-NS (UDP/137,138;TCP/139) is a broadcast protocol being a predecessor of LLMNR and used in the local network to publish and search for resources. By default, NetBIOS over TCP/IP support is enabled for all interfaces in all Windows versions.
+
+Thus, these protocols enable the computers in the local network to find each other if DNS server is unavailable. They may be necessary in a workgroup, but in the domain network both of them may be disabled. 
